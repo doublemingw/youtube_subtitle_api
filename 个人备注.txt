@@ -1,0 +1,25 @@
+
+本地使用：
+1）启动服务:
+cd /Users/doubleming/Myapps/projects/youtube_subtitle_api
+./start.sh
+2）API 端点：
+- GET /api/transcript/{video_id} - 获取指定视频的字幕
+- GET /api/languages/{video_id} - 获取指定视频的可用字幕语言
+- GET /api/srt/{video_id} - 获取 SRT 格式的字幕
+3）访问 API 文档：
+- 打开浏览器访问 http://localhost:8000/docs
+
+
+# 删除当前的 Git 仓库
+rm -rf /Users/doubleming/Myapps/projects/youtube_subtitle_api/.git
+
+# 创建 .gitignore 文件（如上所示）
+
+# 重新初始化 Git 仓库
+cd /Users/doubleming/Myapps/projects/youtube_subtitle_api
+git init
+git add .
+git commit -m "初始化 YouTube 字幕 API 服务"
+git remote add origin https://github.com/你的用户名/youtube_subtitle_api.git
+git push -u origin main
